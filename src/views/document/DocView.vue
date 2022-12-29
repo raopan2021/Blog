@@ -70,14 +70,14 @@ export default {
   mounted () {
     this.getMdFileName(); // 获取md文件名称
 
-    if (localStorage.getItem("activeComponent") == null) {
-      localStorage.setItem("activeComponent","0");
+    if (sessionStorage.getItem("activeComponent") == null) {
+      sessionStorage.setItem("activeComponent","0");
     }
-    if (localStorage.getItem("activeIndex") == null) {
-      localStorage.setItem("activeIndex","0-0");
+    if (sessionStorage.getItem("activeIndex") == null) {
+      sessionStorage.setItem("activeIndex","0-0");
     }
-    this.activeComponent = localStorage.getItem("activeComponent")
-    this.activeIndex = localStorage.getItem("activeIndex")
+    this.activeComponent = sessionStorage.getItem("activeComponent")
+    this.activeIndex = sessionStorage.getItem("activeIndex")
   },
   methods: {
     // 获取md文件名称
@@ -240,8 +240,8 @@ export default {
     menuClick (mdItem,mdIndex,floderIndex,floderItem) {
       this.activeComponent = mdItem.id;
       this.activeIndex = floderIndex + '-' + mdIndex;
-      localStorage.setItem("activeComponent",this.activeComponent);
-      localStorage.setItem("activeIndex",this.activeIndex);
+      sessionStorage.setItem("activeComponent",this.activeComponent);
+      sessionStorage.setItem("activeIndex",this.activeIndex);
     },
   },
 }
