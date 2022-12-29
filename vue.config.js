@@ -1,4 +1,7 @@
+const BASE_URL = process.env.NODE_ENV === "production" ? "/Blog/" : "/";
+
 module.exports = {
+  publicPath: BASE_URL,
   chainWebpack: config => {
     config.module.rule('md')
       .test(/\.md/)
