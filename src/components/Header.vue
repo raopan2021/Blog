@@ -3,6 +3,7 @@
     <div class="headRouter">
       <div :class="activeindex == item.id ? 'activeComponent grid-content' : 'grid-content'" v-for="item in routeList"
         :key="item.id" @click="click(item.route, item.id)">
+        <i :class="item.icon"></i>
         <span v-if="item.route">{{ item.name }}</span>
         <span v-else>{{ item.name }}</span>
       </div>
@@ -18,10 +19,10 @@ export default {
       activeindex: null,
       activeComponent: "",
       routeList: [
-        { name: '首页',route: '/home',id: 0 },
-        { name: '我的技术文档',route: '/docs',id: 1 },
-        { name: 'github',id: 2 },
-        { name: '关于',route: '/about',id: 3 },
+        { name: '首页',route: '/home',id: 0,icon: "el-icon-house" },
+        { name: '我的技术文档',route: '/docs',id: 1,icon: "el-icon-notebook-2" },
+        { name: 'gitee',id: 2,icon: "el-icon-position" },
+        { name: '关于',route: '/about',id: 3,icon: "el-icon-location-outline" },
       ]
     }
   },
@@ -33,7 +34,7 @@ export default {
       if (route) {
         this.$router.push({ path: route });
       } else {
-        window.open("https://github.com/raopan2021");
+        window.open("https://gitee.com/raopan2021/blog");
       }
       this.activeindex = index;
       sessionStorage.setItem("activeRoute",this.activeindex)
@@ -68,6 +69,10 @@ export default {
     cursor: pointer;
     opacity: .5;
     text-align: center;
+
+    i {
+      color: #1989fa;
+    }
 
     span {
       display: inline-block;

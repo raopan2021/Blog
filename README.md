@@ -1,4 +1,4 @@
-# 饶盼 の blog
+# <a href="https://raopan2021.gitee.io/blog/#/home" target="_blank">饶盼 の blog</a>
 
 研究了各种各样的博客框架，在各种config里面修改配置，经常出错或者看不懂。
 
@@ -22,7 +22,7 @@ WordPress是用php写的，我不会，就没有具体研究了。
 
 ### 首页使用了“今日诗词”。
 
-[今日诗词官网api](https://www.jinrishici.com/doc/#npm)
+<a href="https://www.jinrishici.com/doc/#npm" target="_blank">今日诗词官网api</a>
 
 ```js
 npm i jinrishici --save // 官网上写的是'-i'，多了一个'-'

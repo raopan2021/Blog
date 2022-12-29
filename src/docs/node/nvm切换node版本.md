@@ -22,11 +22,14 @@ nvm version // 显示nvm版本。
 
 如果下载node过慢或者安装失败，请更换国内镜像源, 在 nvm 的安装路径下，找到 settings.txt，设置node_mirro与npm_mirror为国内镜像地址。下载就飞快了~~
 
+```js
 root: D:\nvm
 path: D:\nodejs
 nvm npm_mirror https://npmmirror.com/mirrors/npm/
 nvm node_mirror https://npmmirror.com/mirrors/node/
-或者：
+// 或者：
 node_mirror: https://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
-打开链接查看可以node版本：https://registry.npmmirror.com/binary.html?path=node/
+// 打开链接查看可以node版本：https://registry.npmmirror.com/binary.html?path=node/
+```
+

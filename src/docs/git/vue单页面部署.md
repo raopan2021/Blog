@@ -31,7 +31,7 @@ module.exports = {
 
 > 将项目中**使用了 `/` 开头的绝对路径写法去引用 public 静态资源的 `URI` 改掉**。如果是写在 Html 部分 `<template>...</template>` 里面的，则可以直接将打头的 `/` 去掉，如 `<img src="/img/test.jpg" />` 改为 `<img src="img/test.jpg" />`。如果写在 Css 部分 `<style></style>` 里面的，如 `background: url("/img/test.jpg")`，那你还是把 public 里面对应的资源挪到 asstes 下面吧……因为我也没找到其他解决办法 ε=(´ο｀*)))唉
 
-### 4、注释掉 `/dist
+### 4、`.gitignore`注释掉 /dist
 
 > 因为我们最终部署上去的应用，就在这里面，所以我们必须将它上传到 gitee
 
