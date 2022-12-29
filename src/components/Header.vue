@@ -33,11 +33,11 @@ export default {
     click (route,index) {
       if (route) {
         this.$router.push({ path: route });
+        this.activeindex = index;
+        sessionStorage.setItem("activeRoute",this.activeindex)
       } else {
         window.open("https://gitee.com/raopan2021/blog");
       }
-      this.activeindex = index;
-      sessionStorage.setItem("activeRoute",this.activeindex)
     }
   },
 }
@@ -72,6 +72,7 @@ export default {
 
     i {
       color: #1989fa;
+      margin-right: 15px;
     }
 
     span {
@@ -81,6 +82,10 @@ export default {
       line-height: 100px;
       color: #1989fa;
     }
+  }
+
+  .grid-content:hover {
+    background-color: rgba(150, 173, 206, .2);
   }
 
   .activeComponent {
