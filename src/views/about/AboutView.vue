@@ -19,6 +19,9 @@
 </template>
 
 <script>
+// 加载樱花飘落的特效
+import "@/utils/specialEfficiency/sakura.js";
+
 import HeaderView from "@/components/Header.vue";
 import ReadmeView from '@/../README.md';
 
