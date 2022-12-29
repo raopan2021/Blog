@@ -70,6 +70,12 @@ export default {
   mounted () {
     this.getMdFileName(); // 获取md文件名称
 
+    if (localStorage.getItem("activeComponent") == null) {
+      localStorage.setItem("activeComponent","0");
+    }
+    if (localStorage.getItem("activeIndex") == null) {
+      localStorage.setItem("activeIndex","0-0");
+    }
     this.activeComponent = localStorage.getItem("activeComponent")
     this.activeIndex = localStorage.getItem("activeIndex")
   },
