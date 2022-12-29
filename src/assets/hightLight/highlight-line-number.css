@@ -1,0 +1,13 @@
+/*修改行号列样式*/
+.hljs-ln-numbers {
+    text-align    : center;
+    color         : #f00;
+    border-right  : 1px solid #CCC;
+    vertical-align: top;
+    padding-right : 15px !important;
+}
+
+/* 修改代码列样式 */
+.hljs-ln-code {
+    padding-left: 20px !important;
+}

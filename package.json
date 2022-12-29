@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "element-ui": "^2.15.12",
+    "jinrishici": "^1.0.6",
+    "prismjs": "^1.29.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.7.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "vue-loader": "^17.0.1",
+    "vue-markdown-loader": "^2.5.0",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
