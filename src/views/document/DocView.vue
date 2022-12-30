@@ -102,10 +102,12 @@ export default {
         // ./Element/下拉框select.md
         value = value.replace("./",""); // 去掉 ./
         value = value.replace(".md",""); // 去掉 .md
-        // Element/下拉框select
+        // 2-Element/下拉框select
 
         const pos = value.lastIndexOf('/'); // 获取 / 的索引
-        const filename = value.substring(0,pos); // 获取文件夹名称
+        let filename = value.substring(0,pos); // 获取文件夹名称
+        const pos1 = value.lastIndexOf('-'); // 
+        filename = filename.substring(pos1 + 1);  // 去掉文件夹序号‘2-’
         const mdname = value.substring(pos + 1); // 获取文件名称
 
         const obj = {
@@ -114,6 +116,7 @@ export default {
           mdname: mdname
         }
         fileList.push(obj); // 得到文件列表fileList
+        console.log(fileList);
       })
 
       // 修改文件列表结构如下：

@@ -49,7 +49,10 @@ input {
   /* 手动去掉input输入时的蓝色/加粗边框 */
   outline    : none;
 }
-
+html{
+  /* 滚动条scrollbar出现造成的页面宽度被挤压 */
+  overflow-y: overlay;
+}
 body {
   /* CSS3 抗锯齿形 让文字显示的更加清晰 */
   -webkit-font-smoothing: antialiased;

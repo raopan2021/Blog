@@ -1,5 +1,6 @@
 <template>
   <div class="docs">
+    <VueScrollProgress></VueScrollProgress>
     <header-view></header-view>
 
     <div class="doc-main">

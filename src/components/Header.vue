@@ -51,7 +51,7 @@ export default {
   transform: translateX(-50%);
   width: 100%;
   background: transparent;
-  z-index: 1500;
+  z-index: 1;
 }
 
 .headRouter {
