@@ -50,7 +50,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.9);
   z-index: 1;
 }
 

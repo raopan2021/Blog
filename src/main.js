@@ -8,15 +8,19 @@ import 'element-ui/lib/theme-chalk/index.css';
 // 动画 animate.css
 import animate from "animate.css";
 
-import 'github-markdown-css/github-markdown.css';
+require("./assets/css/reset.css"); // 清除浏览器默认的样式
+require("./assets/css/github-markdown.css"); // markdown的样式
+require("./assets/css/pageTranslate.css"); // 页面跳转动画
 
-// import Prism from 'prismjs';
+import 'github-markdown-css/github-markdown.css';
 
 // 点击鼠标，弹出❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤"
 import "@/utils/specialEfficiency/mouseClick.js";
 // 点击鼠标，出现烟花爆炸特效
 import "@/utils/specialEfficiency/mouseMove.js";
-// 鼠标移动，出现蜘蛛网特效
+// 点击鼠标，出现烟花掉落特效
+import "@/utils/specialEfficiency/mouseClickFireworks.js";
+// 移动鼠标，出现蜘蛛网特效
 import "@/utils/specialEfficiency/mouseClickBlow.js";
 
 // 页面滚动进度条、加载进度条插件

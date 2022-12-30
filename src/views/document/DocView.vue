@@ -6,7 +6,7 @@
 
       <template>
         <div class="menu">
-          <el-menu :default-active="activeIndex" class="el-menu-vertical-demo">
+          <el-menu :default-active="activeIndex" class="el-menu-vertical-demo" unique-opened>
             <el-submenu v-for="(floderItem, floderIndex) in mdList" :key="floderIndex.id" :index="floderIndex + ''">
               <template slot="title">
                 <i class="el-icon-menu"></i>
@@ -255,18 +255,18 @@ export default {
 </style>
 
 <style lang="scss">
-// // 父节点前面的图标
-// .el-menu--horizontal>.el-submenu .el-submenu__title,
-// .el-menu--horizontal>.el-submenu.is-active .el-submenu__title,
-// .el-submenu__title i {
-//   color: red;
-// }
+// 父节点前面的图标
+.el-menu--horizontal>.el-submenu .el-submenu__title,
+.el-menu--horizontal>.el-submenu.is-active .el-submenu__title,
+.el-submenu__title i {
+  color: #409EFF;
+}
 
-// // 父节点后面的图标
-// .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
-//   border-bottom: 2px solid #ff8923;
-//   color: #f00;
-// }
+// 父节点后面的图标
+.el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
+  border-bottom: 2px solid #ff8923;
+  color: #409EFF;
+}
 
 // // 父菜单鼠标悬浮/选中时的样式
 // .el-menu--horizontal:focus,
@@ -408,5 +408,11 @@ export default {
   border-left: #33A2EF solid 6px !important;
   background-color: #E2EFF9 !important;
   color: #38B2FF !important;
+}
+
+// 右边框
+.el-menu {
+  border-right: 0;
+  // border-right: 1px solid #40a0ff4f;
 }
 </style>

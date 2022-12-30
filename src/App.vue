@@ -51,9 +51,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/reset.css"; // 清除浏览器默认的样式
-// @import "@/assets/pageTransition.css"; // 页面跳转动画
-
 #app {
   position: relative;
   height: 100vh;
@@ -61,44 +58,14 @@ export default {
   margin: 0 auto;
 }
 
-// ::-webkit-scrollbar {
-//   display: none;
-// }
+::-webkit-scrollbar {
+  display: none;
+}
 
 ::deep .el-menu {
   align-items: center;
   /* 垂直居中 */
   justify-content: center;
   /* 水平居中 */
-}
-
-// 页面跳转动画
-.slide-right-enter-active,
-.slide-right-leave-active,
-.slide-left-enter-active,
-.slide-left-leave-active {
-  will-change: transform;
-  transition: all 500ms;
-  position: absolute;
-}
-
-.slide-right-enter {
-  opacity: 0;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.slide-right-leave-active {
-  opacity: 0;
-  transform: translate3d(100%, 0, 0);
-}
-
-.slide-left-enter {
-  opacity: 0;
-  transform: translate3d(100%, 0, 0);
-}
-
-.slide-left-leave-active {
-  opacity: 0;
-  transform: translate3d(-100%, 0, 0);
 }
 </style>
