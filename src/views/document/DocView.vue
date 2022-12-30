@@ -6,10 +6,11 @@
 
       <template>
         <div class="menu">
-          <el-menu :default-active="activeIndex" class="el-menu-vertical-demo" unique-opened>
+          <el-menu :default-active="activeIndex" class="el-menu-vertical-demo" unique-opened :collapse="isCollapse"
+            @click="collapseChange">
             <el-submenu v-for="(floderItem, floderIndex) in mdList" :key="floderIndex.id" :index="floderIndex + ''">
               <template slot="title">
-                <i class="el-icon-menu"></i>
+                <!-- <i class="el-icon-menu"></i> -->
                 <span>{{ floderItem.filename }}</span>
               </template>
 
@@ -53,6 +54,7 @@ import HeaderView from "@/components/Header.vue";
 export default {
   data () {
     return {
+      isCollapse: false, // navMenu是否折叠
       mdList: [], // 文件列表(json格式)
       activeComponent: 0, // 当前打开的md组件
       activeIndex: '0-0', // 当前el-menu打开的index
@@ -246,6 +248,10 @@ export default {
       sessionStorage.setItem("activeComponent",this.activeComponent);
       sessionStorage.setItem("activeIndex",this.activeIndex);
     },
+
+    collapseChange () {
+      this.isCollapse = !this.isCollapse;
+    }
   },
 }
 </script>

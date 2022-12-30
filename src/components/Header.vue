@@ -20,7 +20,7 @@ export default {
       activeComponent: "",
       routeList: [
         { name: '首页',route: '/home',id: 0,icon: "el-icon-house" },
-        { name: '我的技术文档',route: '/docs',id: 1,icon: "el-icon-notebook-2" },
+        { name: '文档',route: '/docs',id: 1,icon: "el-icon-notebook-2" },
         { name: 'gitee',id: 2,icon: "el-icon-position" },
         { name: '关于',route: '/about',id: 3,icon: "el-icon-location-outline" },
       ]

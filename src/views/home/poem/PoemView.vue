@@ -64,10 +64,4 @@ export default {
 
 <style lang="scss"scoped>
 @import "./index.scss";
-
-.home {
-  background: url("https://api.paugram.com/wallpaper/?category=cn");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
 </style>
