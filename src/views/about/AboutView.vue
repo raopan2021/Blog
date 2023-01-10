@@ -15,6 +15,7 @@
         <div class="up">UP</div>
       </el-backtop>
 
+      <audio-view></audio-view>
     </div>
   </div>
 </template>
@@ -25,6 +26,7 @@
 
 import HeaderView from "@/components/Header.vue";
 import ReadmeView from '@/../README.md';
+import AudioView from '@/components/AudioView.vue';
 
 export default {
   data () {
@@ -33,7 +35,8 @@ export default {
   },
   components: {
     HeaderView,
-    ReadmeView
+    ReadmeView,
+    AudioView
   },
   mounted () {
   },

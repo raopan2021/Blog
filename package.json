@@ -12,7 +12,9 @@
     "jinrishici": "^1.0.6",
     "nprogress": "^0.2.0",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.1"
+    "vue-page-transition": "^0.2.2",
+    "vue-router": "^3.5.1",
+    "vuetify-audio": "^0.3.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~5.0.0",
@@ -24,7 +26,8 @@
     "svg-sprite-loader": "^6.0.11",
     "vue-loader": "^17.0.1",
     "vue-markdown-loader": "^2.5.0",
-    "vue-template-compiler": "^2.7.14"
+    "vue-template-compiler": "^2.7.14",
+    "vuetify": "^2.6.13"
   },
   "browserslist": [
     "> 1%",

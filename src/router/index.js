@@ -7,25 +7,25 @@ const routes = [
   {
     path: '/',
     redirect: "/home",
-    meta:{index:0}, // meta对象的index用来定义当前路由的层级,由小到大,由低到高
+    meta: { transition: 'zoom' },
     component: () => import("@/views/home/poem/PoemView.vue"),
   },
   {
     path: '/home',
     name: 'home',
-    meta:{index:1}, // meta对象的index用来定义当前路由的层级,由小到大,由低到高
+    meta: { transition: 'fade-in-up' },
     component: () => import("@/views/home/poem/PoemView.vue"),
   },
   {
     path: '/docs',
     name: 'docs',
-    meta:{index:2}, // meta对象的index用来定义当前路由的层级,由小到大,由低到高
+    meta: { transition: 'fade' },
     component: () => import("@/views/document/DocView.vue"),
   },
   {
     path: '/about',
     name: 'about',
-    meta:{index:3}, // meta对象的index用来定义当前路由的层级,由小到大,由低到高
+    meta: { transition: 'overlay-up' },
     component: () => import("@/views/about/AboutView.vue"),
   }
 ]

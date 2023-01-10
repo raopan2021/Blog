@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <transition :name="transitionName">
+    <vue-page-transition>
       <router-view />
-    </transition>
+    </vue-page-transition>
   </div>
 </template>
 
@@ -15,25 +15,26 @@ export default {
   name: 'App',
   data () {
     return {
-      transitionName: ''
+      // transitionName: ''
     }
   },
   watch: {//使用watch 监听$router的变化
     // 页面跳转动画
-    $route (to,from) {
-      //如果to索引大于from索引,判断为前进状态,反之则为后退状态
-      if (to.meta.index > from.meta.index) {
-        //设置动画名称
-        this.transitionName = 'slide-left';
-      } else {
-        this.transitionName = 'slide-right';
-      }
-    }
+    // $route (to,from) {
+    //   //如果to索引大于from索引,判断为前进状态,反之则为后退状态
+    //   if (to.meta.index > from.meta.index) {
+    //     //设置动画名称
+    //     this.transitionName = 'slide-left';
+    //   } else {
+    //     this.transitionName = 'slide-right';
+    //   }
+    // }
   },
   mounted () {
-    window.addEventListener("scroll",this.handleScroll); // 监听滚动条事件
+    window.addEventListener("scroll",this.handleScroll); // NProgress监听滚动条事件
   },
   methods: {
+    // NProgress监听滚动条事件
     handleScroll () {
       // 屏幕剩余的高度
       let surplus =

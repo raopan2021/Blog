@@ -6,11 +6,11 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
 // 动画 animate.css
-import animate from "animate.css";
+// import animate from "animate.css";
+// require("./assets/css/pageTranslate.css"); // 页面跳转动画
 
 require("./assets/css/reset.css"); // 清除浏览器默认的样式
 require("./assets/css/github-markdown.css"); // markdown的样式
-require("./assets/css/pageTranslate.css"); // 页面跳转动画
 
 import 'github-markdown-css/github-markdown.css';
 
@@ -39,6 +39,14 @@ router.afterEach(() => {
   // 在即将进入新的页面组件前，关闭掉进度条
   NProgress.done()
 })
+
+// 页面跳转动画
+import VuePageTransition from 'vue-page-transition'
+Vue.use(VuePageTransition)
+
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+Vue.use(Vuetify);
 
 Vue.config.productionTip = false
 
