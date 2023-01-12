@@ -89,6 +89,7 @@ export default {
     };
   },
   mounted () {
+    document.documentElement.scrollTop = 0; // 切换路由后，设置新页面的高度为0
     this.init();
   },
   methods: {

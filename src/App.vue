@@ -37,9 +37,7 @@ export default {
     // NProgress监听滚动条事件
     handleScroll () {
       // 屏幕剩余的高度
-      let surplus =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+      let surplus = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       // 当前滑动高度
       let scrollY = document.documentElement.scrollTop;
       // 当前位置百分比小数

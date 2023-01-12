@@ -245,8 +245,9 @@ export default {
     menuClick (mdItem,mdIndex,floderIndex,floderItem) {
       this.activeComponent = mdItem.id;
       this.activeIndex = floderIndex + '-' + mdIndex;
-      sessionStorage.setItem("activeComponent",this.activeComponent);
+      sessionStorage.setItem("activeComponent",this.activeComponent); // 切换md文件后，记录当前阅读的md文件是哪个，下次进入页面自动进入此页面
       sessionStorage.setItem("activeIndex",this.activeIndex);
+      document.documentElement.scrollTop = 0; // 切换md文件后，设置新页面的高度为0
     },
 
     collapseChange () {

@@ -5,18 +5,19 @@
 
     <div class="doc-main">
 
-      <div class="markdown-body">
+      <!-- <div class="markdown-body"> -->
         <!-- 文章详情页面 -->
         <div class="details">
-          <readme-view class="markdown-body"></readme-view>
+          <readme-view class="markdown-body" v-highlight></readme-view>
         </div>
-      </div>
+      <!-- </div> -->
+    </div>
+
       <el-backtop>
         <div class="up">UP</div>
       </el-backtop>
 
-      <audio-view></audio-view>
-    </div>
+      <!-- <audio-view></audio-view> -->
   </div>
 </template>
 
@@ -26,7 +27,7 @@
 
 import HeaderView from "@/components/Header.vue";
 import ReadmeView from '@/../README.md';
-import AudioView from '@/components/AudioView.vue';
+// import AudioView from '@/components/AudioView.vue';
 
 export default {
   data () {
@@ -36,7 +37,7 @@ export default {
   components: {
     HeaderView,
     ReadmeView,
-    AudioView
+    // AudioView
   },
   mounted () {
   },

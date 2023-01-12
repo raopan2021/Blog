@@ -1,6 +1,6 @@
 # markdown文件注册为vue组件
 
- <a href="https://blog.csdn.net/weixin_41192489/article/details/113324104" target="_blank">vue 加载展示md文件-原网址</a>
+<a href="https://blog.csdn.net/weixin_41192489/article/details/113324104" target="_blank">vue 加载展示md文件-原网址</a>
 
 ### 安装依赖包
 
@@ -60,8 +60,6 @@ Vue.directive('highlight', function (el) {
 })
 ```
 
-
-
 ### 在vue文件中使用
 
 ```js
@@ -82,4 +80,3 @@ components: {
   </div>
 </div>
 ```
-
