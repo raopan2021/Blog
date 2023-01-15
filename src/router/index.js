@@ -27,6 +27,18 @@ const routes = [
     name: 'about',
     meta: { transition: 'overlay-up' },
     component: () => import("@/views/about/AboutView.vue"),
+  },
+  {
+    path:'/404',
+    name:'404',
+    meta: { transition: 'overlay-up' },
+    component: resolve => require(['@/views/miss404/404.vue'], resolve),
+  },
+  {
+    path:'*',
+    redirect:{
+        name:"404"
+    }
   }
 ]
 
