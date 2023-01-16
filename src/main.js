@@ -6,8 +6,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
 // 动画 animate.css
-// import animate from "animate.css";
-// require("./assets/css/pageTranslate.css"); // 页面跳转动画
+import animate from "animate.css";
+require("./assets/css/pageTranslate.css"); // 页面跳转动画
 
 require("./assets/css/reset.css"); // 清除浏览器默认的样式
 

@@ -12,11 +12,11 @@
 
 > 所以为什么不自己写一个呢？
 
-### 本blog使用了vue2、vue-router、elementUI、sass。
+### 本blog使用了vue2、vue-router、elementUI。
 
 只要你是个前端开发者，很容易自己定制的。
 
-当然，你也可以直接去src/docs目录下，将自己的md文件夹替换进去。
+md笔记在src/docs目录下，将自己的md笔记文件夹替换进去。
 
 > 注意，不能将md文件直接放在docs目录下，需要有文件夹包裹。
 
@@ -91,15 +91,15 @@ import animate from "animate.css";
 
 这个插件的文档也是稀烂。
 
-去docs目录下，找“md文件批量注册为vue组件”，这里就不详述了。<router-link to="/docs">点击去往docs目录 </router-link>
+去docs目录下，找“md文件批量注册为vue组件”，这里就不详述了。`<router-link to="/docs">`点击去往docs目录 `</router-link>`
 
 ### markdown样式使用了highlight.js
 
 完成了上一步，这一步也就完成了。
 
-### <a href="https://www.cnblogs.com/ainyi/p/14722182.html" target="_blank">批量导入md文件，注册为组件 </a>
+### `<a href="https://www.cnblogs.com/ainyi/p/14722182.html" target="_blank">`批量导入md文件，注册为组件 `</a>`
 
-具体方法也在docs目录下，找“md文件注册为vue组件”<router-link to="/docs">点击去往docs目录 </router-link>
+具体方法也在docs目录下，找“md文件注册为vue组件”`<router-link to="/docs">`点击去往docs目录 `</router-link>`
 
 这个有亿点点难，打开了n个网页找方法。
 

@@ -2,13 +2,15 @@
 
 <a href="https://segmentfault.com/a/1190000039183909" target="_blank">原链接</a>
 
+**暂时没有去解决dialog尺寸变化，而Echarts没有init的问题**
+
 > 将以下代码复制到一个js文件中，然后在入口文件main.js中import引入即可；
 >
-> 给el-dialog标签上加上 v-dialogDrag 指令就可以实现弹窗的全屏和拉伸了；
+> 给el-dialog加上 v-dialogDrag 指令就可以实现弹窗的全屏和拉伸了；
 >
 > 给el-dialog设置 :close-on-click-modal=“false” , 禁止点击遮罩层关闭弹出层；
 >
-> 给dialog加上 v-if="calDialogVisible" ，当dialog关闭后，重新打开dialog，会自动初始化；
+> 给el-dialog加上 v-if="calDialogVisible" ，当dialog关闭后，重新打开dialog，会自动初始化页面大小和位置；
 >
 > 如果是form表单，不要将提交等按钮放置el-form-item，以免在上下拉伸时被隐藏；
 
