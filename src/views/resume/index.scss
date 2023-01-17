@@ -1,11 +1,95 @@
-.about {
+.resume {
   position: relative;
   height  : 100%;
   width   : 100%;
 
+  .introduction {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    height          : 100vh;
+    width           : 400px;
+    background-color: #59738A;
+
+    .head {
+      margin: 60px auto 40px;
+      height: 200px;
+      width : 150px;
+
+      img {
+        height       : 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .want {
+      width        : 100%;
+      margin-bottom: 30px;
+      text-align   : center;
+      font-size    : 20px;
+      color        : #fff;
+    }
+
+    .Item {
+      display       : flex;
+      flex-direction: column;
+      font-size     : 16px;
+      color         : #ddd;
+
+      .item {
+        flex           : 1;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        height         : 40px;
+        line-height    : 40px;
+
+        .key {
+          flex         : 3;
+          text-align   : right;
+          padding-right: 40px;
+
+          span {
+            padding-right: 5px;
+          }
+        }
+
+        .value {
+          flex: 7;
+        }
+
+      }
+
+      .item:first-of-type {
+        .value {
+
+          letter-spacing: 5px;
+          font-size     : 20px;
+        }
+      }
+    }
+
+    .layout {
+      position: absolute;
+      bottom  : 10px;
+      width   : 100%;
+      margin  : 0;
+      padding : 0;
+
+      span {
+        display   : inline-block;
+        width     : 100%;
+        text-align: center;
+        font-size : 12px;
+        color     : #333;
+      }
+    }
+  }
+
   .doc-main {
     position: absolute;
-    top     : 100px;
+    top     : 0;
+    left    : 400px;
     width   : 100%;
 
     // .markdown-body {
