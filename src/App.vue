@@ -68,3 +68,7 @@ export default {
   /* 水平居中 */
 }
 </style>
+
+<style lang="scss">
+@import url("@/assets/css/github-markdown.css");
+</style>

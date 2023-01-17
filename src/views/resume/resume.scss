@@ -101,21 +101,9 @@
     .details {
       background-color: transparent !important;
 
-      ::v-deep .markdown-body {
-        background-color: transparent !important;
-
-        ::v-deep html {
-
-          ::v-deep body {
-            background-color      : transparent !important;
-            /* 元素遮罩层不遮挡下方元素的代码 */
-            -webkit-pointer-events: none;
-            -moz-pointer-events   : none;
-            -ms-pointer-events    : none;
-            -o-pointer-events     : none;
-            pointer-events        : none;
-          }
-        }
+      /* markdown的样式 */
+      .markdown-body {
+        margin: 0 0 0 60px;
       }
     }
 

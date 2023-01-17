@@ -61,5 +61,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./index.scss"
+@import "./resume.scss"
 </style>

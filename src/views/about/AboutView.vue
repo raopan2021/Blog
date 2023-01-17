@@ -4,12 +4,10 @@
 
     <div class="doc-main">
 
-      <!-- <div class="markdown-body"> -->
       <!-- 文章详情页面 -->
       <div class="details">
         <readme-view class="markdown-body" v-highlight></readme-view>
       </div>
-      <!-- </div> -->
     </div>
 
     <el-backtop>
