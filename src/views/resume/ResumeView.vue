@@ -1,9 +1,7 @@
 <template>
   <div class="resume">
     <div class="introduction">
-      <div class="head">
-        <img src="@/assets/images/myPhoto.jpg" alt="我的照片">
-      </div>
+      <div class="head"></div>
 
       <div class="want">
         <span>求职意向：前端开发工程师</span>
